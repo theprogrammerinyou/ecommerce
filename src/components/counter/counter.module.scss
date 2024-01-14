@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    width: max-content;
+    align-items: center;
+    .button {
+        border-radius: 6px;
+        font-size: 1.4rem;
+        background: var(--clr-gray-6);
+        @media (hover: hover) {
+            &:hover {
+                background: var(--clr-primary);
+            }
+        }
+        &:active {
+            transform: scale(0.9);
+            background: var(--clr-primary);
+        }
+    }
+    .number {
+        display: inline-flex;
+        justify-content: center;
+        padding: 0 0.8rem;
+        font-size: 1.5rem;
+        min-width: 3.5rem;
+        font-weight: 500;
+    }
+}

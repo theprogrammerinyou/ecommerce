@@ -1,0 +1,66 @@
+@import "src/global/css/functions.scss";
+
+.container {
+    display: flex;
+    background: #242424;
+    padding: 2rem 3rem;
+    gap: 3rem;
+    color: var(--clr-white);
+    font-size: 0.9rem;
+    .logo {
+        width: rem(110);
+    }
+    .footer_item {
+        flex: 1;
+        &.brand {
+            display: flex;
+            flex-direction: column;
+            span:first-of-type {
+                margin-top: 1rem;
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+
+    a {
+        color: #8f8f8f;
+        font-weight: normal;
+        line-height: 2.2;
+        &:hover {
+            color: var(--clr-white);
+        }
+        svg {
+            font-size: 1.5rem;
+            margin: 0 0.3rem;
+        }
+    }
+    .info {
+        li {
+            color: #8f8f8f;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            &:first-child {
+                align-items: flex-start;
+                svg {
+                    font-size: 1.7rem;
+                }
+            }
+            svg {
+                color: var(--clr-primary);
+                font-size: 1.2rem;
+            }
+            span {
+                span {
+                    margin-right: 0.5rem;
+                    font-weight: 500;
+                    color: var(--clr-white);
+                }
+            }
+            &:last-of-type {
+                color: var(--clr-primary);
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.container {
+    width: 91.3333vw;
+    margin: 0 auto;
+    min-height: calc(100vh - 110px);
+    .wrapper {
+        padding: 1.5rem 1rem;
+        .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .items_wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.4rem;
+
+            @media screen and (max-width: 66em) {
+                grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+            }
+        }
+    }
+}
