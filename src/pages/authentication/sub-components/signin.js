@@ -41,7 +41,7 @@ const Signin = forwardRef((props, ref) => {
         password: password,
       })
       .then((response) => {
-        console.log('response', response.data)
+        console.log("response", response.data);
         const user = response.data.foundUser;
         toast({
           status: "success",

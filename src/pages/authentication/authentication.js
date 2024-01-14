@@ -29,8 +29,6 @@ const Authentication = () => {
   return (
     <div className={styles.green_bg}>
       <section className={styles.container}>
-        <img src={bag} className={styles.side_image} alt="" />
-
         <div className={styles.sub_container}>
           <div className={`${styles.wrapper} ${slider ? styles.active : ""}`}>
             <Signin ref={setSignInRef} />
